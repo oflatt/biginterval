@@ -54,7 +54,7 @@
 (define-syntax-rule (provide-mpfr-mpfi-fun name c-name)
   (begin
     (define cfun
-      (get-mpfr-fun c-name (_fun _mpfr-pointer _mpfi-pointer -> _int)))
+      (get-mpfi-fun c-name (_fun _mpfr-pointer _mpfi-pointer -> _int)))
     (define (name x1)
       (define y (bf 0))
       (cfun y x1)
