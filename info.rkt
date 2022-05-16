@@ -8,3 +8,5 @@
 (define pkg-desc "A wrapper around MPFI")
 (define pkg-authors
   '("Oliver Flatt"))
+(define deps '("base"
+               "math-lib"))
